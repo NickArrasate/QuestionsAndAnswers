@@ -8,11 +8,14 @@ export default Ember.Component.extend({
     },
     updateAnswer(answer){
       var params = {
-        userName: this.get('updatedName'),
-        answer: this.get('updatedAnswer'),
+        userName: this.get('updatedName') ? this.get('updatedName'):'',
+        answer: this.get('updatedAnswer') ? this.get('updatedAnswer'):'',
         question: this.get('question')
       };
-      this.sendAction('updateAnswer', answer, params)
+      this.sendAction('updateAnswer', answer, params);
+      this.set('editFormShow', false)
+      this.set("updateName",'');
+      this.set("updateAnswer",'');
     }
   }
 });

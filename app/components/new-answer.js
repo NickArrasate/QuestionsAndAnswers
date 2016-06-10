@@ -14,6 +14,11 @@ export default Ember.Component.extend({
       };
       this.set('showAnswer', false);
       this.sendAction('saveAnswer', params);
+    },
+    deleteAnswer(answer){
+      if(confirm('Delete this answer?')){
+        this.sendAction('deleteAnswer', answer);
+      }
     }
   }
 });

@@ -3,6 +3,7 @@ ul{
 }
 a{
   color: black;
+  font-family: 'Open Sans', sans-serif;
 }
 a:hover {
   text-decoration: none;
@@ -14,6 +15,7 @@ body{
 .answer-info{
   display: inline-block;
   margin-right: 4em;
+  font-family: 'Open Sans', sans-serif;
 }
 .answer-button{
   display: inline-block;
@@ -22,6 +24,7 @@ body{
   margin-top: 8px;
 }
 .answer-box{
+  height: 80px;
   border: solid 1px #99CBD1;
   margin-bottom: 10px;
   padding: 5px 0px 10px 18px;
@@ -30,6 +33,7 @@ body{
   -webkit-box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
   -moz-box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
   box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
+  font-family: 'Open Sans', sans-serif;
 }
 .question-tile{
   border: solid 1px #D69449;
@@ -40,12 +44,15 @@ body{
   -webkit-box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
   -moz-box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
   box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
+  font-family: 'Open Sans', sans-serif;
 }
 button{
+  margin-bottom: 5px;
   border-radius: 3px;
   background-color: #40F5FF;
   border-style: none;
   -webkit-box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
   -moz-box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
   box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
+  font-family: 'Open Sans', sans-serif;
 }

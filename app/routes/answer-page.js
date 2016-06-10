@@ -22,6 +22,12 @@ export default Ember.Route.extend({
         return question.save();
       });
       this.transitionTo('answer-page');
+    },
+    deleteAnswer(answer){
+      if(confirm('Delete this answer?')){
+      answer.destroyRecord();
+      this.transitionTo('answer-page');
+    }
     }
   }
 });
