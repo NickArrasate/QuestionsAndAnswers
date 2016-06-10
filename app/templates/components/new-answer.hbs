@@ -1,0 +1,11 @@
+{{#if showAnswer}}
+<form>
+  <label>Name:</label>
+  {{input value=userName}}<br>
+  <label>Answer:</label>
+  {{input value=answer}}
+  <button {{action 'saveAnswer'}}>Save</button>
+</form>
+{{else}}
+<button {{action 'showAnswerForm'}}>Answer</button>
+{{/if}}

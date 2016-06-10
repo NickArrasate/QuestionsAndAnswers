@@ -1,0 +1,12 @@
+{{#if editFormShow}}
+<h4>Edit your answer:</h4>
+<form>
+  <label>Name:</label>
+  {{input value=updatedName}}
+  <label>Answer:</label>
+  {{input value=updatedAnswer}}
+  <button {{action 'updateAnswer' answer}}>Update</button>
+</form>
+{{else}}
+<button {{action 'showEdit'}}>Edit</button>
+{{/if}}

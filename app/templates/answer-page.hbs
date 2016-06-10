@@ -1,0 +1,19 @@
+<div class='answer-header'>
+  <h2>{{model.question}}</h2>
+  <h5>Additional notes: {{model.notes}}</h5>
+  <h4>Asked by: {{model.userName}}</h4>
+</div>
+<h4>Answers:</h4>
+<ul>
+  {{#each model.answers as |answer|}}
+  <div class='answer-box'>
+    <div class='answer-info'>
+      <li>{{answer.answer}}<br> - {{answer.userName}}</li>
+    </div>
+    <div class='answer-button'>
+      {{edit-answer answer=answer updateAnswer='updateAnswer'}}
+    </div>
+  </div>
+  {{/each}}
+</ul>
+{{new-answer question=model saveAnswer='saveAnswer'}}
