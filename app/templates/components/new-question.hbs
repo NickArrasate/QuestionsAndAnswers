@@ -1,9 +1,15 @@
 <form>
-  <label>Your Name:</label>
-  {{input value=userName}}<br>
-  <label>Ask a question:</label>
-  {{input value=question}}<br>
-  <label>Additional Notes</label>
-  {{input value=notes}}<br>
+  <div class='form-group'>
+    <label>Your Name:</label>
+    {{input value=userName class='form-control'}}
+  </div>
+  <div class='form-group'>
+    <label>Ask a question:</label>
+    {{input value=question class='form-control'}}
+  </div>
+  <div class='form-group'>
+    <label>Additional Notes</label>
+    {{input value=notes class='form-control'}}
+  </div>
   <button {{action 'saveQuestion'}}>Save</button>
 </form>

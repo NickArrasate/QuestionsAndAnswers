@@ -4,15 +4,18 @@
   <div class='question-tile'>
     {{#link-to 'answer-page' question.id}}
     <div>
-      <li><h4>{{question.question}}</h4><br>
-        <div class='Qicon'>{{unanswered-icon question}}</div>
-        Asked by {{question.userName}} on {{question.timestamp}}<br>
+      <li>
+        <div class='row'>
+          <h4 class='Qtitle col-xs-2'>{{question.question}}</h4><br>
+          <div class='Qicon col-xs-1 col-xs-offset-7'>{{unanswered-icon question}}</div>
+          <div class='bookmarkButton col-sm-2'>
+            <button {{action 'bookmark' question}}>Bookmark</button>
+          </div>
+        </div>
+        <div class='Qdetails'>Asked by {{question.userName}} on {{question.timestamp}}</div>
       </li>
     </div>
     {{/link-to}}
-    <div class='saveButton'>
-      <button {{action 'bookmark' question}}>Bookmark</button>
-    </div>
   </div>
   {{/each}}
 </ul>

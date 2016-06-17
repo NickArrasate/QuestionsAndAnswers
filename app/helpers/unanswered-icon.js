@@ -7,6 +7,8 @@ export function unansweredIcon(params) {
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-question-sign"></span>');
   } else if (question.get('answers').get('length') >= 3){
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-exclamation-sign"></span>');
+  } else {
+    return Ember.String.htmlSafe('<span class="holder">A</span>');
   }
 }
 

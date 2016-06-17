@@ -12,6 +12,17 @@ a:hover {
 body{
   background-color: #F5F5F5;
 }
+.Qicon{
+  font-size: 18pt;
+  width: 40px;
+  margin-top: -15px;
+}
+.Qtitle{
+  display: inline-block;
+}
+.Qdetails{
+  margin-top: 10px;
+}
 .answer-info{
   display: inline-block;
   margin-right: 4em;
@@ -36,11 +47,11 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 .question-tile{
-  border: solid 1px #D69449;
+  border: solid 1px #ececec;
   margin-bottom: 10px;
   padding: 5px 0px 10px 18px;
   border-radius: 6px;
-  background-color: #FFC98C;
+  background-color: white;
   -webkit-box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
   -moz-box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
   box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
@@ -55,4 +66,10 @@ button{
   -moz-box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
   box-shadow: 2px 3px 4px -1px rgba(207,207,207,1);
   font-family: 'Open Sans', sans-serif;
+}
+.bookmarkButton{
+  margin-top: -12px;
+}
+.holder{
+  color: white;
 }
