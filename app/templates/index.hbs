@@ -1,12 +1,2 @@
-<h2>Recent Questions:</h2>
-<ul>
-  {{#each model as |question|}}
-  {{#link-to 'answer-page' question.id}}
-  <div class='question-tile'>
-    <li><h4>{{question.question}}</h4><br>
-      asked by: {{question.userName}}<br>
-    </li>
-  </div>
-  {{/link-to}}
-  {{/each}}
-</ul>
+
+{{question-display model=model}}
