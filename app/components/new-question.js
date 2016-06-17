@@ -1,9 +1,8 @@
 import Ember from 'ember';
-import Moment from 'moment'
+import moment from 'moment';
 
 export default Ember.Component.extend({
   actions:{
-
     saveQuestion(){
       var params = {
         userName: this.get('userName') ? this.get('userName'):'',
